@@ -1,0 +1,12 @@
+{
+    "name": "somename",
+    "alias": "somename.com",
+    "builds": [
+      { "src": "package.json", "use": "@now/static-build" }
+    ],
+    "version": 2,
+    "routes": [
+      { "src": "(.*\\..*)", "dest": "$1" },
+      { "src": ".*", "dest": "/index.html" }
+    ]
+  }

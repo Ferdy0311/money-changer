@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+.navbar-money-changer {
+    background-color: #00794C !important;
+    margin-bottom: 10px;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 60px !important; /* Margin bottom by footer height */
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Set the fixed height of the footer here */
+    line-height: 50px; /* Vertically center the text there */
+    background-color: #00794C;
+    color: #ddd;
+}
+
