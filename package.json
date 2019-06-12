@@ -7,9 +7,7 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "now-build": "ng build --prod",
-    "now-start": "serve dist/ --single"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
