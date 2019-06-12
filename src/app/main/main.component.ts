@@ -20,7 +20,6 @@ export class MainComponent implements OnInit {
   ];
   listChange = [];
   moneyAmount;
-  isShow = false;
   constructor() { }
 
   ngOnInit() {
