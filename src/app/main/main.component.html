@@ -1,8 +1,7 @@
 <div class="text-center">
   <div class="form-input">
-    <h1 class="h3 mb-3 font-weight-normal">Welcome to Money Changer</h1>
     <label for="inputMoney" class="sr-only">Money Amount</label>
-    <input type="text" name="money" id="inputMoney" placeholder="Input Money Amount" [(ngModel)]="moneyAmount" (keyup.enter)="generateMoney()">
+    <input currencyMask type="text" name="money" id="inputMoney" placeholder="Input Money Amount" [(ngModel)]="moneyAmount" (keyup.enter)="generateMoney()">
     <table>
       <tr *ngFor="let change of listChange">
         <td>{{change.amount}}</td>

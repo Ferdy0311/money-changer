@@ -6,6 +6,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 
+import { CurrencyMaskModule } from "ng2-currency-mask";
+import { CurrencyMaskConfig, CURRENCY_MASK_CONFIG } from "ng2-currency-mask/src/currency-mask.config";
+
+export const CustomCurrencyMaskConfig: CurrencyMaskConfig = {
+  align: "center",
+  allowNegative: true,
+  decimal: ",",
+  precision: 0,
+  prefix: "Rp ",
+  suffix: "",
+  thousands: "."
+};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,9 +27,12 @@ import { MainComponent } from './main/main.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CurrencyMaskModule
   ],
-  providers: [],
+  providers: [ 
+    { provide: CURRENCY_MASK_CONFIG, useValue: CustomCurrencyMaskConfig } 
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

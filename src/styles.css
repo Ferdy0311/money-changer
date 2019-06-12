@@ -18,6 +18,7 @@ html {
 }
 body {
     margin-bottom: 60px !important; /* Margin bottom by footer height */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .footer {
     position: absolute;
